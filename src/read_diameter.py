@@ -30,4 +30,7 @@ for row in range(len(characters)):
             _string = str(row) + " " + str(column)
             print(_string)
 
+#%%
+print(characters[11])
+print(characters[71])
 # %%
