@@ -23,14 +23,18 @@ for line in lines:
                 relationship[links[row]][links[column]] += 1
 
 # %%
+charactersDegree=[0]*len(characters)
 for row in range(len(characters)):
     for column in range(row + 1, len(characters)):
         if relationship[row][column] != 0:
-            # _string = "{\"source\": \"" + str(characters[row]) + "\", \"target\": \"" + str(characters[column]) + "\", \"value\": " + str(relationship[row][column]) + "},"
-            _string = str(row) + " " + str(column)
-            print(_string)
+            charactersDegree[row] += 1
+            charactersDegree[column] += 1
 
-#%%
-# print(characters[11])
-# print(characters[71])
+# print(charactersDegree)
+
+# %%
+allDegree = sum(charactersDegree)
+avgDegree = allDegree / len(charactersDegree)
+print(avgDegree)
+
 # %%
