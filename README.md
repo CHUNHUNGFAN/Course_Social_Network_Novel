@@ -24,7 +24,7 @@ What things you need to install the software and how to install them
 * vue-chartjs
 
 	```
-	$npm install vue-chartjs
+	$sudo npm install vue-chartjs chart.js --save
 	```
 
 * full-fullpage.js
